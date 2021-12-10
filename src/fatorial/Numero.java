@@ -2,7 +2,7 @@ package fatorial;
 
 public class Numero {
 	private int fatorial;
-	private int aux=1;
+	private int multiplicacao = 1;
 
 	public int getFatorial() {
 		return fatorial;
@@ -13,15 +13,14 @@ public class Numero {
 	}
 
 	public void calculaFatorial() {
+		int aux;
 		if (fatorial == 0 || fatorial == 1)
 			fatorial = 1;
 		else {
-			for (int i = fatorial; i > 0; i--) {
-				aux = aux * fatorial;
-				fatorial = fatorial - 1;
-			}
+			for (int i = fatorial; i >= 1; i--)
+				multiplicacao *= i;	
 		}
-		fatorial = aux;
+		fatorial = multiplicacao;
 	}
 
 }
