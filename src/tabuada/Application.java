@@ -1,4 +1,5 @@
 package tabuada;
+
 import java.util.Scanner;
 
 public class Application {
@@ -8,13 +9,13 @@ public class Application {
 		Scanner sc = new Scanner(System.in);
 		String aux;
 		char opcao = 's';
-		
+
 		System.out.println("TABUADA");
-		while(opcao == 's' || opcao == 'S') {
+		while (opcao == 's' || opcao == 'S') {
 			System.out.println("Digite um valor entre 1 e 10");
 			int numero = sc.nextInt();
-			while(numero < 1 || numero > 10) {
-				System.out.println("Valor inválido!!\nDigiete um valor entre 1 e 10: ");
+			while (numero < 1 || numero > 10) {
+				System.out.println("Valor inválido!!\nDigite um valor entre 1 e 10: ");
 				numero = sc.nextInt();
 			}
 			tabuada.setTabuada(numero);
@@ -23,7 +24,7 @@ public class Application {
 			aux = sc.next();
 			opcao = aux.charAt(0);
 		}
-		
+
 		sc.close();
 
 	}
