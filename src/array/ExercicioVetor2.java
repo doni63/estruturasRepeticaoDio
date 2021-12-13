@@ -17,7 +17,12 @@ public class ExercicioVetor2 {
 					letra.equalsIgnoreCase("e") ||
 					letra.equalsIgnoreCase("i") ||
 					letra.equalsIgnoreCase("o") ||
-					letra.equalsIgnoreCase("u"))) {
+					letra.equalsIgnoreCase("u") ||
+					letra.equalsIgnoreCase("A") ||
+					letra.equalsIgnoreCase("E") ||
+					letra.equalsIgnoreCase("I") ||
+					letra.equalsIgnoreCase("O") ||
+					letra.equalsIgnoreCase("U"))) {
 				consoantes[count] = letra;
 				quantidadeConsoantes ++;
 			}
